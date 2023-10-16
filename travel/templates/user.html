@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% from 'bootstrap5/form.html' import render_form %}
+
+{% block content %}
+
+<div class="container-fluid">
+<div class="page-header">
+    <h4>{{ heading }}</h4>
+</div>
+<div class="col-md-6 ml-5">
+  {{ render_form(form) }}
+</div>
+
+{% endblock %}
